@@ -34,6 +34,6 @@ This project uses Python and libraries like Numpy , Matplotlib and OpenCV in ord
 ### Support or Contact
 
 Have Questions ? Contact us on any of the following Contacts :
-[Walid Kasab](waledkasa@gmail.com)
-[Sadek Mohammed](sadek.hmask@gmail.com)
-[Mohamed Ezzat](mohamed2005.ezzat@gmail.com)
+[Walid Kasab](https://github.com/Doublew08)
+[Sadek Mohammed](https://github.com/Sadek-Mohammed)
+[Mohamed Ezzat](https://github.com/MohamedEzzat12)
