@@ -1,15 +1,14 @@
-## Welcome to GitHub Pages
+## Welcome to Instagram Filter 
 
-You can use the [editor on GitHub](https://github.com/Doublew08/CodeBozu_Fellowship_Instagram_Filter_Team_42/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+You can see The Fellowship documentation [here](https://docs.google.com/document/d/1u7dbGvRBuHQQl6wf6vBMfVGC0akBb6-2UrkatDCbTk0/edit) where we were instructed to Create this project 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Brief Discription
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Bozu loves to try different instagram filters like vignette, summer effect, winter effect etc.
+He has decided to make his own instagram filters.So We are Helping Bozu make his own filters and figure out how to do it.
 
 ```markdown
-Syntax highlighted code block
+Code goes here
 
 # Header 1
 ## Header 2
@@ -26,12 +25,15 @@ Syntax highlighted code block
 [Link](url) and ![Image](src)
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+For more details see [CodeBozu Fellowship Website](http://www.codebozu.com/).
 
-### Jekyll Themes
+### How is It Done
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Doublew08/CodeBozu_Fellowship_Instagram_Filter_Team_42/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+This project uses Python and libraries like Numpy , Matplotlib and OpenCV in order to make Some Instagram filters giving us basic experience about Computer vision and There will be a report on what did we do through The whole fellowship and what we learned  
 
 ### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Have Questions ? Contact us on any of the following Contacts :
+[Walid Kasab](waledkasa@gmail.com)
+[Sadek Mohammed](sadek.hmask@gmail.com)
+[Mohamed Ezzat](mohamed2005.ezzat@gmail.com)
