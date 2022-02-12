@@ -1,5 +1,3 @@
-import cv2 as cv
-import numpy as np
 import matplotlib.image as mpimg
 import matplotlib.pyplot as plt
 from rgb import redify, greenify, blueify, grayscale, negative
