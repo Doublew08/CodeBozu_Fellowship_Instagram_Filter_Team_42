@@ -20,6 +20,8 @@ def fliph(imgg):
 flipped_h_img = fliph(img)
 
 cv2.imshow('image', flipped_h_img)
+cv2.imshow('image', flipped_v_img)
+
 
 cv2.waitKey(0)
 cv2.destroyAllWindows()
