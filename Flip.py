@@ -11,8 +11,15 @@ def flipv(imgg):
         img2[i,:]=imgg[938-i-1,:]
 
     return img2
-flipped_img=flipv(img)
-cv2.imshow('image', flipped_img)
+flipped_v_img=flipv(img)
+def fliph(imgg):
+    img2 = np.zeros([938,808,], np.uint8)
+    for i in range(808):
+        img2[:,i]=imgg[:,808-i-1]
+    return img2
+flipped_h_img = fliph(img)
+
+cv2.imshow('image', flipped_h_img)
 
 cv2.waitKey(0)
 cv2.destroyAllWindows()
