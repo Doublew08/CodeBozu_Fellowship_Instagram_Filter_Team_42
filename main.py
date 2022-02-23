@@ -1,7 +1,7 @@
 import matplotlib.image as mpimg
 import matplotlib.pyplot as plt
 import cv2 as cv
-from rgb import redify, greenify, blueify, grayscale, negative, apply_threshold
+from rgb import redify, greenify, blueify, grayscale, negative, apply_threshold, andromeda
 
 bad = False
 
@@ -31,6 +31,11 @@ while bad is False:
     elif op == "6":
         threshold = input("Enter the threshold: \n")
         result = apply_threshold(img, int(threshold))
+        plt.imshow(result)
+    elif op == "7":
+        big = cv.imread("Bakery.jpg")
+        small = cv.imread("Bozu.png")
+        result = andromeda(small, big)
         plt.imshow(result)
     else:
         bad = False
