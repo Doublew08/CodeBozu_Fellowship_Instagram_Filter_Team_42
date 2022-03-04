@@ -24,15 +24,33 @@ def blueify(img):
 
 
 def grayscale(img):
-    r, g, b = cv.split(img)
-    result = r * 0.2989 + 0.5870 * g + 0.1140 * b
-    return result
+    img = img[:, :, 0] * 0.2989 + 0.5870 * img[:, :, 1] + 0.1140 * img[:, :, 2]
+    return img
 
 
 def negative(img):
-    r, g, b = cv.split(img)
-    r = 255 - r
-    g = 255 - g
-    b = 255 - b
-    result = cv.merge([r, g, b])
-    return result
+    print("neg")
+    img[:, :, 0] = 255 - img[:, :, 0]
+    img[:, :, 1] = 255 - img[:, :, 1]
+    img[:, :, 2] = 255 - img[:, :, 2]
+    return img
+
+def apply_threshold(img, threshold):
+    img[:, :, :][img[:, :, :] >= threshold] = 255
+    img[:, :, :][img[:, :, :] < threshold] = 0
+    return img
+
+
+def andromeda(small, big):
+    small_length = small.shape[0]
+    small_width = small.shape[1]
+    big_length = big.shape[0]
+    big_width = big.shape[1]
+    limit_1 = int(big_width/2 - small_width/2)
+    limit_2 = int(big_width/2 + small_width/2)
+    limit_3 = int(big_length/2 - small_length/2)
+    limit_4 = int(big_length/2 + small_length/2)
+    print(limit_2-limit_1)
+    big[limit_3:limit_4, limit_1:limit_2] = small
+    return big
+
