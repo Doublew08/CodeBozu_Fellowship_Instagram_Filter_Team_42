@@ -9,8 +9,9 @@ def main():
 
     img = cv2.imread("bozu.png", cv2.IMREAD_COLOR)
     img = grayscale(img)
-
-    img = sobelx(img)
+        
+    #use sobelx() or sobely() or cannyEdge()
+    img = cannyEdge(img)
 
     pil.imshow(img , 'gray')
 
