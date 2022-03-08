@@ -1,5 +1,6 @@
 import numpy as np
 import cv2 as cv
+import matplotlib.pyplot as plt
 
 
 def redify(img):
@@ -36,8 +37,8 @@ def negative(img):
     return img
 
 def apply_threshold(img, threshold):
-    img[:, :, :][img[:, :, :] >= threshold] = 255
-    img[:, :, :][img[:, :, :] < threshold] = 0
+    img[:, :, :][img[:, :, :][img[:,:,:]] >= threshold] = 255
+    img[:, :, :][img[:, :, :][img[:,:,:]] < threshold] = 0
     return img
 
 
@@ -53,4 +54,5 @@ def andromeda(small, big):
     print(limit_2-limit_1)
     big[limit_3:limit_4, limit_1:limit_2] = small
     return big
+
 
