@@ -10,14 +10,14 @@ def vintage(img):
     kernel = kx * ky.T
     mask = 255 * kernel / np.linalg.norm(kernel)
     img[:, :, 0] = img[:, :, 0] * mask
-    img[:, :, 1] = img[:, :, 2] * mask
+    img[:, :, 1] = img[:, :, 1] * mask
     img[:, :, 2] = img[:, :, 2] * mask
     return img
 
 def sepia(img):
-    kernel_sepia = np.matrix([[0.393, 0.769, 0.189],
-                             [0.349, 0.686, 0.168],
-                             [0.272, 0.534, 0.131]])
+    kernel_sepia = np.matrix([[0.272, 0.534, 0.131],
+    			    [0.349, 0.686, 0.168],
+    			   [0.393, 0.769, 0.189]])
     result = cv.transform(img, kernel_sepia)
     return result
 
